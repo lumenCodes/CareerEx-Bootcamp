@@ -16,6 +16,7 @@ button{
     color: red;
     height: 35px;
     text-emphasis: strong;
+    /* align-self: ; */
 
 }
 
@@ -24,4 +25,20 @@ nav{
     text-align: center;
     
     
+}
+
+.home-button{
+    background-color: #7a12bf;
+    color: white;
+}
+
+.what-we-do-button{
+    background-color: #0dac2f;
+    color: black;
+
+}
+
+#contact-button{
+    background-color: rgb(234, 139, 15);
+    color: black;
 }
