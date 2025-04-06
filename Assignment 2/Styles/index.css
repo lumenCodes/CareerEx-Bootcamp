@@ -6,9 +6,20 @@ section{
     border-style: solid;
     padding: 10px;
     margin: 20px;
-    width: fit-content;
+    width: 1350px;
+
 }
 
+h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.about-paragraph{
+    font-family:  Helvetica;
+}
+h2{
+    align-content: center;
+}
 button{
     /* position: relative; */
     background-color: aqua;
@@ -35,10 +46,23 @@ nav{
 .what-we-do-button{
     background-color: #0dac2f;
     color: black;
-
+ 
 }
 
 #contact-button{
     background-color: rgb(234, 139, 15);
     color: black;
+}
+
+ul li{
+    display: inline-block;
+    padding-left: 70px;
+    font-weight: bolder;
+    
+}
+
+.nav-bar{
+    background-color: #6a73f1;
+    border-style: none;
+    font-size: 29px;
 }
