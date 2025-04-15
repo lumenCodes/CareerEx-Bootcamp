@@ -19,7 +19,9 @@ console.log(myQuote.toLowerCase())
 
 // Take a word and rearrange it in reverse order, then log the reversed word.
 
-console.log()
+let myfirstName = ['Chinwe']
+let reversed = myfirstName.slice().reverse().join()
+console.log(reversed)
 
 
 
@@ -36,6 +38,7 @@ console.log(favoiriteFood[4])
 // Add two more food items to the list: one at the beginning and one at the end. Display the new list.
 
 favoiriteFood.push('JILL')
+favoiriteFood.unshift('new element')
 
 console.log(favoiriteFood)
 
