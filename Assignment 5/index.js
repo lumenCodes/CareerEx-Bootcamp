@@ -49,21 +49,46 @@ const drugs = [
    
 //    Get all drugs that are antibiotics.
 
+const antibiotics = drugs.filter((drug) => {
+    return drug.category == 'Antibiotic'
+})
 
+console.log(antibiotics)
    
 //    Return an array of drug names in lowercase.
    
+   const name_Lower = drugs.map((each)=>{
+    return each.name.toLowerCase()
+   })
    
-   
+   console.log(name_Lower)
+
+
 //    Write a function that accepts a category and returns all drugs under that category.
-   
+
+//     function searchByCategory(categoryName) {
+//     return drugs.filter(categoryName) 
+//     }
+
+// searchByCategory('Antibiotic')
    
 //    Log each drug’s name and its manufacturer.
+
+const afaOgwu = drugs.map((each) => {
+    console.log( `the name is ${each.name}, while the manufacturer is ${each.manufacturer}`) // loggin to the console
+     return {  name: each.name, manufacturer: each.manufacturer // return to the variable afaOgwu
+    
+}})
+console.log(afaOgwu)
    
    
 //     Return all drugs that require a prescription.
-   
-   
+
+   const requirePrescription = drugs.filter((each) => {
+    return each.isPrescriptionOnly === true
+   })
+   console.log(requirePrescription)
+
    
 //    Return a new array, each item should follow the format: "Drug: [name] - [dosageMg]mg".
     
@@ -73,7 +98,10 @@ const drugs = [
    
    
 //    Return all drugs that are not prescription-only.
-   
+const notPrescription = drugs.filter((each) => {
+    return each.isPrescriptionOnly === false
+   })
+   console.log(notPrescription)
    
    
 //    Write a function that takes a manufacturer name and returns how many drugs are from that company.
@@ -81,6 +109,11 @@ const drugs = [
    
    
 //     Use forEach() to count how many drugs are Analgesics.
+
+const countt = drugs.forEach(each => {
+    return each.category == 'Analgesics'
+})
+console.log(countt)
 
 
 
