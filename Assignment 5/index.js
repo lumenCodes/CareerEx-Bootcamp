@@ -66,11 +66,12 @@ console.log(antibiotics)
 
 //    Write a function that accepts a category and returns all drugs under that category.
 
-//     function searchByCategory(categoryName) {
-//     return drugs.filter(categoryName) 
-//     }
+const findByCategory = function caetgoryFinder(category){
 
-// searchByCategory('Antibiotic')
+    return drugs.filter((drug) => drug.category == category);
+}
+
+console.log(findByCategory('Analgesic'))
    
 //    Log each drug’s name and its manufacturer.
 
@@ -91,11 +92,20 @@ console.log(afaOgwu)
 
    
 //    Return a new array, each item should follow the format: "Drug: [name] - [dosageMg]mg".
+
+const drugsName = drugs.map((each) => {
+    return "Drug: " + each.name + " - " + each.dosageMg + "mg"
+})
     
+console.log(drugsName)
    
 //    Write a function that returns all drugs with a stock less than 50.
    
-   
+const stock = drugs.filter((drug) => {
+    return drug.stock < 50
+})
+
+console.log(stock)
    
 //    Return all drugs that are not prescription-only.
 const notPrescription = drugs.filter((each) => {
@@ -105,15 +115,25 @@ const notPrescription = drugs.filter((each) => {
    
    
 //    Write a function that takes a manufacturer name and returns how many drugs are from that company.
-   
+   function searchByManufacturer(company){
+    return drugs.filter((drug) => {drugs.manufacturer == company})
+   }
+
+   console.log(searchByManufacturer('Teva'));
    
    
 //     Use forEach() to count how many drugs are Analgesics.
 
-const countt = drugs.forEach(each => {
-    return each.category == 'Analgesics'
-})
-console.log(countt)
+let numberOfDrug = 0
+
+drugs.forEach(each => {
+    
+    if (each.category == "Analgesic") {
+        numberOfDrug ++
+
+    
+}})
+console.log(`The Analgesics are ${numberOfDrug}`)
 
 
 
