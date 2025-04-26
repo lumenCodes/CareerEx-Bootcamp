@@ -116,7 +116,7 @@ const notPrescription = drugs.filter((each) => {
    
 //    Write a function that takes a manufacturer name and returns how many drugs are from that company.
    function searchByManufacturer(company){
-    return drugs.filter((drug) => {drugs.manufacturer == company})
+    return drugs.filter((drug) => {drug.manufacturer == company})
    }
 
    console.log(searchByManufacturer('Teva'));
